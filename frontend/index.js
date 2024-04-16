@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         console.log(jsonData); // This is for debugging; remove or comment out in production
 
-        fetch(`http://localhost:3000/submit-form`, {
+        fetch(`https://nodejs-serverless-function-express-ebon-psi.vercel.app/api/submit-form`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

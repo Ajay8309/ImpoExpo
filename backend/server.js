@@ -4,7 +4,10 @@ const nodemailer = require('nodemailer');
 const cors = require('cors');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
+
+const path = require("path");
+
 
 // Middleware to parse JSON and URL-encoded form data
 app.use(bodyParser.json());

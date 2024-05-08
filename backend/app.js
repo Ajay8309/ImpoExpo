@@ -58,6 +58,7 @@ app.post('/submit-form', async (req, res) => {
         console.log('User email sent: %s', userInfo.messageId);
 
         res.status(200).send('Form submitted successfully');
+        alert("Form Submitted")
     } catch (error) {
         console.error('Error sending emails:', error);
         res.status(500).send('Internal Server Error');

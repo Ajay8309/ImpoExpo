@@ -27,15 +27,15 @@ app.post('/submit-form', async (req, res) => {
             port: 465,
             secure: true,
             auth: {
-                user: 'ajaypanaskar8@gmail.com',
-                pass: 'fpaelzajbaknrvxz',
+                user: 'ankitasurve948@gmail.com',
+                pass: 'Ankita@1871',
             },
         });
 
         // Send email to the owner
         let ownerInfo = await transporter.sendMail({
-            from: 'ajaypanaskar8@gmail.com',
-            to: 'ajaypanaskar8@gmail.com', 
+            from: 'ankitasurve948@gmail.com',
+            to: 'ankitasurve948@gmail.com', 
             subject: 'New Query from User',
             html: `<p>Hi,</p>
                    <p>You have received a new query from a user:</p>
@@ -47,7 +47,7 @@ app.post('/submit-form', async (req, res) => {
 
         // Send email to the user
         let userInfo = await transporter.sendMail({
-            from: 'ajaypanaskar8@gmail.com',
+            from: 'ankitasurve948@gmail.com',
             to: formData.email,
             subject: 'Thank You for Your Query',
             html: `<p>Hi ${formData.name},</p>

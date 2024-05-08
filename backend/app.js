@@ -27,8 +27,8 @@ app.post('/submit-form', async (req, res) => {
             port: 465,
             secure: true,
             auth: {
-                user: 'ankitasurve948@gmail.com',
-                pass: 'Ankita@1871',
+                user: 'ajaypanaskar8@gmail.com',
+                pass: 'fpaelzajbaknrvxz',
             },
         });
 
